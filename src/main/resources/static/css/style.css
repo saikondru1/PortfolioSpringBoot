@@ -1,0 +1,74 @@
+.hero {
+  text-shadow: 1px 1px 8px rgba(0,0,0,0.8);
+}
+
+.btn {
+  border-radius: 30px;
+  padding: 10px 25px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #0dcaf0;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+footer {
+  font-size: 0.9rem;
+}
+
+.rounded-circle {
+  border: 3px solid #0dcaf0;
+}
+
+/* 🔹 Smooth Scrolling Skills Animation */
+.scroll-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  margin: 30px 0;
+  white-space: nowrap;
+}
+
+.scroll-content {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scrollLeft 25s linear infinite;
+}
+
+.scroll-content:hover {
+  animation-play-state: paused;
+}
+
+.skill-item {
+  display: inline-block;
+  text-align: center;
+  margin: 0 40px;
+  vertical-align: middle;
+}
+
+.skill-item img {
+  height: 60px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-item img:hover {
+  transform: scale(1.2);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.skill-item p {
+  margin-top: 8px;
+  font-weight: 600;
+}
+
+/* 🔹 Animation Keyframes */
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

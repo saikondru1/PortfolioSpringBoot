@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Experience | Naga Sai Kondru</title>
+
+  <!-- ✅ Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- ✅ Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <!-- ✅ Animate CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+  <!-- ✅ Your Custom Styles -->
+  <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+
+<body>
+<header th:replace="~{fragments/header :: header}"></header>
+
+<section>
+  <h2>Experience</h2>
+
+  <p><b>Software Developer</b> – Cloud Works, Irving, TX (Sep 2023 – Present)</p>
+  <ul>
+    <li>Designed and implemented modular, high-performance microservices using Java and Spring Boot to improve scalability.</li>
+    <li>Developed REST APIs and integrated them with AWS (EC2, S3, RDS, IAM, Lambda) for secure and efficient cloud deployment.</li>
+    <li>Automated CI/CD pipelines with Jenkins, Docker, and GitHub Actions, reducing deployment time by 30%.</li>
+    <li>Enhanced database efficiency by optimizing SQL queries and schema design in MySQL.</li>
+    <li>Implemented Spring Security and OAuth2.0 for secure user authentication and authorization.</li>
+  </ul>
+  <p><strong>Key Skills:</strong> Java | Spring Boot | AWS | Jenkins | MySQL</p>
+
+  <hr>
+
+  <p><b>Jr Software Developer</b> – Cloud Big Data Technologies, Hyderabad (Dec 2019 – Dec 2021)</p>
+  <ul>
+    <li>Built and maintained Spring Boot microservices integrated with MySQL and PostgreSQL databases.</li>
+    <li>Developed RESTful APIs and documented endpoints using Swagger/OpenAPI for team collaboration.</li>
+    <li>Implemented Spring Data JPA and Hibernate ORM for smooth data access and transaction management.</li>
+    <li>Containerized services with Docker to achieve environment consistency and portability.</li>
+    <li>Participated in Agile sprints, contributing to sprint planning, reviews, and code quality improvements through Jira and Git.</li>
+  </ul>
+  <p><strong>Key Skills:</strong> Spring Boot | Hibernate | Docker | PostgreSQL | Swagger</p>
+
+  <hr>
+
+  <p><b>Jr Software Intern</b> – Cloud Big Data Technologies, Hyderabad (Apr 2019 – Dec 2019)</p>
+  <ul>
+    <li>Assisted in developing backend microservices using Java Spring Boot for enterprise data platforms.</li>
+    <li>Integrated Kafka producers and consumers to support asynchronous event-driven data processing.</li>
+    <li>Worked on MySQL database queries and schema updates to support multiple API modules.</li>
+    <li>Contributed to writing JUnit test cases to ensure code reliability and maintainability.</li>
+    <li>Collaborated with senior developers in Agile teams, improving hands-on experience in full stack application flow.</li>
+  </ul>
+  <p><strong>Key Skills:</strong> Java | Kafka | MySQL | JUnit | Agile</p>
+</section>
+
+<footer th:replace="~{fragments/footer :: footer}"></footer>
+
+<!-- ✅ Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

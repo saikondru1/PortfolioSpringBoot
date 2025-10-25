@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills | Naga Sai Kondru</title>
+
+  <!-- ✅ Bootstrap & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+
+<body>
+<header th:replace="~{fragments/header :: header}"></header>
+
+<section class="container mt-5 mb-5">
+  <div class="text-center mb-5">
+    <h2 class="fw-bold text-info">Technical Skills</h2>
+    <p class="text-muted">Here are the technologies and tools I work with most often.</p>
+  </div>
+
+  <!-- ✅ Programming Languages -->
+  <div class="mb-5">
+    <h4 class="text-secondary mb-3"><i class="bi bi-code-slash"></i> Programming Languages</h4>
+    <div class="scroll-container">
+      <div class="scroll-content d-flex align-items-center">
+        <div class="col text-center"><img th:src="@{/images/Java-Light.svg}" alt="Java" width="60"><p class="mt-2 fw-semibold">Java</p></div>
+        <div class="col text-center"><img th:src="@{/images/JavaScript.svg}" alt="JavaScript" width="60"><p class="mt-2 fw-semibold">JavaScript</p></div>
+        <div class="col text-center"><img th:src="@{/images/React-Light.svg}" alt="React" width="60"><p class="mt-2 fw-semibold">React</p></div>
+        <div class="col text-center"><img th:src="@{/images/Python-Light.svg}" alt="Python" width="60"><p class="mt-2 fw-semibold">Python</p></div>
+        <!-- Duplicate for smooth loop -->
+        <div class="col text-center"><img th:src="@{/images/Java-Light.svg}" alt="Java" width="60"></div>
+        <div class="col text-center"><img th:src="@{/images/React-Light.svg}" alt="React" width="60"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ✅ Frameworks & Libraries -->
+  <div class="mb-5">
+    <h4 class="text-secondary mb-3"><i class="bi bi-boxes"></i> Frameworks & Libraries</h4>
+    <div class="scroll-container">
+      <div class="scroll-content d-flex align-items-center">
+        <div class="col text-center"><img th:src="@{/images/Spring-Light.svg}" alt="Spring Boot" width="60"><p class="mt-2 fw-semibold">Spring Boot</p></div>
+        <div class="col text-center"><img th:src="@{/images/Spring-Dark.svg}" alt="Spring" width="60"><p class="mt-2 fw-semibold">Spring</p></div>
+        <div class="col text-center"><img th:src="@{/images/Hibernate-Light.svg}" alt="Hibernate" width="60"><p class="mt-2 fw-semibold">Hibernate</p></div>
+        <div class="col text-center"><img th:src="@{/images/Bootstrap.svg}" alt="Bootstrap" width="60"><p class="mt-2 fw-semibold">Bootstrap</p></div>
+        <!-- Duplicate -->
+        <div class="col text-center"><img th:src="@{/images/Spring-Light.svg}" alt="Spring Boot" width="60"></div>
+        <div class="col text-center"><img th:src="@{/images/Hibernate-Light.svg}" alt="Hibernate" width="60"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ✅ Databases -->
+  <div class="mb-5">
+    <h4 class="text-secondary mb-3"><i class="bi bi-database"></i> Databases</h4>
+    <div class="scroll-container">
+      <div class="scroll-content d-flex align-items-center">
+        <div class="col text-center"><img th:src="@{/images/MySQL-Light.svg}" alt="MySQL" width="60"><p class="mt-2 fw-semibold">MySQL</p></div>
+        <div class="col text-center"><img th:src="@{/images/PostgreSQL-Light.svg}" alt="PostgreSQL" width="60"><p class="mt-2 fw-semibold">PostgreSQL</p></div>
+        <div class="col text-center"><img th:src="@{/images/MongoDB.svg}" alt="MongoDB" width="60"><p class="mt-2 fw-semibold">MongoDB</p></div>
+        <div class="col text-center"><img th:src="@{/images/DynamoDB-Light.svg}" alt="DynamoDB" width="60"><p class="mt-2 fw-semibold">DynamoDB</p></div>
+        <!-- Duplicate -->
+        <div class="col text-center"><img th:src="@{/images/MySQL-Light.svg}" alt="MySQL" width="60"></div>
+        <div class="col text-center"><img th:src="@{/images/MongoDB.svg}" alt="MongoDB" width="60"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ✅ Cloud & DevOps -->
+  <div class="mb-5">
+    <h4 class="text-secondary mb-3"><i class="bi bi-cloud"></i> Cloud & DevOps</h4>
+    <div class="scroll-container">
+      <div class="scroll-content d-flex align-items-center">
+        <div class="col text-center"><img th:src="@{/images/AWS-Dark.svg}" alt="AWS" width="60"><p class="mt-2 fw-semibold">AWS</p></div>
+        <div class="col text-center"><img th:src="@{/images/Azure-Dark.svg}" alt="Azure" width="60"><p class="mt-2 fw-semibold">Azure</p></div>
+        <div class="col text-center"><img th:src="@{/images/Jenkins-Light.svg}" alt="Jenkins" width="60"><p class="mt-2 fw-semibold">Jenkins</p></div>
+        <div class="col text-center"><img th:src="@{/images/Docker.svg}" alt="Docker" width="60"><p class="mt-2 fw-semibold">Docker</p></div>
+        <div class="col text-center"><img th:src="@{/images/Github-Light.svg}" alt="GitHub" width="60"><p class="mt-2 fw-semibold">GitHub</p></div>
+        <!-- Duplicate -->
+        <div class="col text-center"><img th:src="@{/images/AWS-Dark.svg}" alt="AWS" width="60"></div>
+        <div class="col text-center"><img th:src="@{/images/Docker.svg}" alt="Docker" width="60"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ✅ Tools & Others -->
+  <div>
+    <h4 class="text-secondary mb-3"><i class="bi bi-gear"></i> Tools & Others</h4>
+    <div class="scroll-container">
+      <div class="scroll-content d-flex align-items-center">
+        <div class="col text-center"><img th:src="@{/images/VSCode-Light.svg}" alt="VS Code" width="60"><p class="mt-2 fw-semibold">VS Code</p></div>
+        <div class="col text-center"><img th:src="@{/images/Kafka.svg}" alt="Kafka" width="60"><p class="mt-2 fw-semibold">Kafka</p></div>
+        <div class="col text-center"><img th:src="@{/images/Postman.svg}" alt="Postman" width="60"><p class="mt-2 fw-semibold">Postman</p></div>
+        <div class="col text-center"><img th:src="@{/images/swagger_logo.svg}" alt="Swagger" width="60"><p class="mt-2 fw-semibold">Swagger</p></div>
+        <!-- Duplicate -->
+        <div class="col text-center"><img th:src="@{/images/Postman.svg}" alt="Postman" width="60"></div>
+        <div class="col text-center"><img th:src="@{/images/swagger_logo.svg}" alt="Swagger" width="60"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer th:replace="~{fragments/footer :: footer}"></footer>
+
+<!-- ✅ Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

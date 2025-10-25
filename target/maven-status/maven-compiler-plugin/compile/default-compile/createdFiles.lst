@@ -1,0 +1,5 @@
+com/portfolio/model/ContactForm.class
+com/portfolio/PortfolioApplication.class
+com/portfolio/controller/ContactController.class
+com/portfolio/controller/HomeController.class
+com/portfolio/service/EmailService.class
