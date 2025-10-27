@@ -14,49 +14,62 @@
   <!-- ✅ Animate CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
-  <!-- ✅ Your Custom Styles -->
+  <!-- ✅ Custom Styles -->
   <link rel="stylesheet" th:href="@{/css/style.css}">
 </head>
 
 <body>
 <header th:replace="~{fragments/header :: header}"></header>
 
-<section>
-  <h2>Experience</h2>
+<section class="container py-5">
+  <h2 class="text-primary mb-4">Professional Experience</h2>
 
-  <p><b>Software Developer</b> – Cloud Works, Irving, TX (Sep 2023 – Present)</p>
-  <ul>
-    <li>Designed and implemented modular, high-performance microservices using Java and Spring Boot to improve scalability.</li>
-    <li>Developed REST APIs and integrated them with AWS (EC2, S3, RDS, IAM, Lambda) for secure and efficient cloud deployment.</li>
-    <li>Automated CI/CD pipelines with Jenkins, Docker, and GitHub Actions, reducing deployment time by 30%.</li>
-    <li>Enhanced database efficiency by optimizing SQL queries and schema design in MySQL.</li>
-    <li>Implemented Spring Security and OAuth2.0 for secure user authentication and authorization.</li>
-  </ul>
-  <p><strong>Key Skills:</strong> Java | Spring Boot | AWS | Jenkins | MySQL</p>
+  <!-- Software Developer -->
+  <div class="mb-5">
+    <h5><strong>Software Developer</strong> – Cloud Works, Irving, TX <span class="text-muted">(Sep 2023 – Present)</span></h5>
+    <ul>
+      <li>Designed and deployed scalable Spring Boot microservices on AWS using EC2, RDS, and Lambda, ensuring modular and reusable architectures.</li>
+      <li>Developed REST APIs with strong authentication and validation for secure, high-performance data exchange.</li>
+      <li>Integrated React.js front-end components with backend APIs for a seamless, responsive user experience.</li>
+      <li>Automated CI/CD pipelines using Jenkins and Docker, streamlining build and deployment workflows.</li>
+      <li>Utilized Apache Kafka for asynchronous communication between services, improving event-driven performance.</li>
+      <li>Applied JUnit and Mockito for unit and integration testing, ensuring robust and stable code releases.</li>
+      <li>Followed SOLID principles and Spring Boot best practices to enhance maintainability and system reliability.</li>
+      <li>Collaborated with DevOps teams to optimize deployment pipelines and reduce manual effort.</li>
+      <li>Documented REST APIs using Swagger and Postman for better cross-team visibility and collaboration.</li>
+    </ul>
+    <p><strong>Key Skills:</strong> Spring Boot | AWS | Kafka | Jenkins | JUnit | Docker | Swagger</p>
+  </div>
 
-  <hr>
+  <!-- Software Developer Intern -->
+  <div class="mb-5">
+    <h5><strong>Software Developer Intern</strong> – Cloud Works Inc., Irving, TX <span class="text-muted">(Jul 2023 – Aug 2023)</span></h5>
+    <ul>
+      <li>Assisted in developing and testing Spring Boot microservices with database integrations using MySQL and Hibernate.</li>
+      <li>Contributed to building REST APIs secured with Spring Security for authentication and access control.</li>
+      <li>Worked with AWS environments and Docker-based application deployments.</li>
+      <li>Created and executed JUnit test cases to ensure API reliability and performance.</li>
+      <li>Used Swagger and Postman for documenting and testing APIs during active sprints.</li>
+      <li>Collaborated with senior developers and participated in Agile sprints and code reviews.</li>
+    </ul>
+    <p><strong>Key Skills:</strong> Spring Boot | Hibernate | Spring Security | JUnit | Docker | Swagger</p>
+  </div>
 
-  <p><b>Jr Software Developer</b> – Cloud Big Data Technologies, Hyderabad (Dec 2019 – Dec 2021)</p>
-  <ul>
-    <li>Built and maintained Spring Boot microservices integrated with MySQL and PostgreSQL databases.</li>
-    <li>Developed RESTful APIs and documented endpoints using Swagger/OpenAPI for team collaboration.</li>
-    <li>Implemented Spring Data JPA and Hibernate ORM for smooth data access and transaction management.</li>
-    <li>Containerized services with Docker to achieve environment consistency and portability.</li>
-    <li>Participated in Agile sprints, contributing to sprint planning, reviews, and code quality improvements through Jira and Git.</li>
-  </ul>
-  <p><strong>Key Skills:</strong> Spring Boot | Hibernate | Docker | PostgreSQL | Swagger</p>
-
-  <hr>
-
-  <p><b>Jr Software Intern</b> – Cloud Big Data Technologies, Hyderabad (Apr 2019 – Dec 2019)</p>
-  <ul>
-    <li>Assisted in developing backend microservices using Java Spring Boot for enterprise data platforms.</li>
-    <li>Integrated Kafka producers and consumers to support asynchronous event-driven data processing.</li>
-    <li>Worked on MySQL database queries and schema updates to support multiple API modules.</li>
-    <li>Contributed to writing JUnit test cases to ensure code reliability and maintainability.</li>
-    <li>Collaborated with senior developers in Agile teams, improving hands-on experience in full stack application flow.</li>
-  </ul>
-  <p><strong>Key Skills:</strong> Java | Kafka | MySQL | JUnit | Agile</p>
+  <!-- Jr Software Developer -->
+  <div class="mb-5">
+    <h5><strong>Jr Software Developer</strong> – Cloud Big Data Technologies, Hyderabad <span class="text-muted">(Mar 2020 – Dec 2021)</span></h5>
+    <ul>
+      <li>Developed and maintained Spring Boot-based RESTful microservices integrated with MySQL and PostgreSQL databases.</li>
+      <li>Implemented Hibernate ORM for optimized data persistence and efficient query handling.</li>
+      <li>Secured REST APIs using Spring Security with JWT-based authentication and role-based authorization.</li>
+      <li>Designed scalable microservice architectures to enhance system maintainability and modularity.</li>
+      <li>Performed unit and integration testing using JUnit and Mockito, ensuring high-quality backend delivery.</li>
+      <li>Documented and tested APIs using Swagger and Postman to simplify integration and improve collaboration.</li>
+      <li>Containerized backend services using Docker for consistent deployment environments.</li>
+      <li>Collaborated through GitHub and managed sprints and backlog using Jira in an Agile setup.</li>
+    </ul>
+    <p><strong>Key Skills:</strong> Java | Spring Boot | Hibernate | Spring Security | JUnit | PostgreSQL | Swagger</p>
+  </div>
 </section>
 
 <footer th:replace="~{fragments/footer :: footer}"></footer>
